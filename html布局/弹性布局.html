@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>弹性布局</title>
+<style type="text/css">
+  .outer {
+        width:1000px; 
+        padding: 10px;
+        margin:120px auto ;
+        background: red;
+        display: -webkit-box;      
+        display: -moz-box;        
+        display: -ms-flexbox;      
+        display: -webkit-flex;    
+        display: flex;    
+        -webkit-box-pack: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+        -webkit-flex-wrap:wrap;
+        -webkit-box-lines:multiple;
+        -moz-flex-wrap:wrap;
+        flex-wrap:wrap;
+        overflow: hidden;
+    }
+   /*.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+   .clearfloat{zoom:1}*/
+    #div1 {
+    width:230px;
+    height:200px ;
+    display: inline-block;
+    margin: 0px 0px 6px 0px;
+    *margin: 0px 0px 6px 16px;
+    margin: 0px 0px 6px 16px\9;
+    background: blue;
+    text-align: center;
+    line-height:200px ;
+    float: left;
+    position: relative;
+    }
+#div1-1{
+width: 20px;
+height:20px ;
+position: absolute;
+left: 25%;
+top:30% ;
+border:1px solid black ;
+text-align: center;
+line-height:20px;
+}
+</style>
+</head>
+<body>
+<div class="outer clearfloat">
+    <div id="div1">1</div>
+    <div id="div1">2</div>
+    <div id="div1">3</div>
+    <div id="div1">4</div>
+    <div id="div1">5</div>
+    <div id="div1">6</div>
+    <div id="div1">7</div>
+    <div id="div1">8</div>  
+   </div>
+</div>
+</body>
+</html>
+
